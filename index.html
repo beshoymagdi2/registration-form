@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>Registration Form</h3>
+
+    <form action="test" method="post">
+
+        <label for="sname">startup name</label>
+        <input id="sname" name="sname" type="text" value="">
+        <br> <br>
+        <label for="email"> email</label>
+        <input id="email" name="email" type="text" value="">
+        <br>
+        <br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age">
+        <br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">-- Select Country --</option>
+            <option value="egypt">Egypt</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="germany">Germany</option>
+        </select>
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <br><br>
+
+        <label for="profilePic">Profile Picture:</label><br>
+        <input id="profilePic" name="profilePic" type="file" accept="img">
+        <br><br>
+
+        <label for="bio">Bio:</label><br>
+        <textarea name="bio" id="bio"></textarea>
+        <br><br>
+
+        <label for="terms">I agree to the Terms and Conditions</label>
+        <input id="terms" name="terms" type="checkbox">
+        <br><br>
+        <button>Register</button>
+    </form>
+
+    <form action="action" method="post">
+    <label for="rating">Rate Our Service (1-10):</label><br>
+    <input type="range" id="rating" name="rating"
+           min="1" max="10" step="1"
+           oninput="ratingValue.value = rating.value">
+    <output id="ratingValue">5</output>
+    <br><br>
+
+    <label for="visitDate">Date Visited:</label><br>
+    <input type="date" id="visitDate" name="visitDate" >
+    <br><br>
+
+    <label for="visitTime">Time Visited:</label><br>
+    <input type="time" id="visitTime" name="visitTime" >
+    <br><br>
+
+    <label for="favColor">Favorite Color:</label><br>
+    <input type="color" id="favColor" name="favColor">
+    <br><br>
+
+    <label for="search">Search Product:</label><br>
+    <input type="search" id="search" name="search">
+    <br>
+    <br>
+
+    <label for="suggestion">Choose a Branch:</label><br>
+    <input list="branches" id="suggestion" name="branch">
+    <datalist id="branches">
+        <option value="Cairo">
+        <option value="Alexandria">
+        <option value="Giza">
+        <option value="Mansoura">
+    </datalist>
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+</body>
+</html>
