@@ -1,2 +1,2 @@
 # registration-form
-HTML5 Registration Form - Digital Pioneers Initiative
+HTML5 Registration Form - Digilians
